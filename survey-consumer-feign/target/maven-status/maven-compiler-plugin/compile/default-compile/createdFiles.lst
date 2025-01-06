@@ -1,0 +1,5 @@
+com\zhy\questionnairesystem\service\SurveyConsumerFeignService.class
+com\zhy\questionnairesystem\controller\SurveyConsumerFeignController.class
+com\zhy\questionnairesystem\hystrix\SurveyConsumerFeignServiceHystrix.class
+com\zhy\questionnairesystem\SurveyConsumerFeignMain.class
+com\zhy\questionnairesystem\config\FeignConfig.class

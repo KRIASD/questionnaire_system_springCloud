@@ -1,0 +1,31 @@
+server:
+  port: 8002 # 服务端口号
+#spring相关配置
+spring:
+  application:
+    name: user-consumer # 服务名称
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    register-with-eureka: true # 是否将自己注册到Eureka Server，默认为true
+    fetch-registry: true # 是否从Eureka Server获取注册信息，默认为true
+    service-url:
+      defaultZone: http://eureka7000.com:7000/eureka/,http://eureka7001.com:7001/eureka/ # Eureka Server地址
+logging:
+  level:
+    # Feign日志以什么级别监控哪个接口
+    com.zhy.questionnairesystem.service.UserConsumerFeignService: debug
+feign:
+  hystrix:
+    enabled: true # 开启Hystrix
+#    command:
+#      default:
+#        execution:
+#            isolation:
+#                thread:
+#                timeoutInMilliseconds: 6000 # 超时时间
+#      circuitBreaker:
+#        requestVolumeThreshold: 10 # 请求次数
+#        sleepWindowInMilliseconds: 10000 # 时间窗口期
+#        errorThresholdPercentage: 60 # 失败率达到多少后跳闸

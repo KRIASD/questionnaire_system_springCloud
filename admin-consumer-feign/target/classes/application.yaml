@@ -1,0 +1,21 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: ADMIN-CONSUMER
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    register-with-eureka: true # 是否将自己注册到Eureka Server，默认为true
+    fetch-registry: true # 是否从Eureka Server获取注册信息，默认为true
+    service-url:
+      defaultZone: http://eureka7000.com:7000/eureka/,http://eureka7001.com:7001/eureka/ # Eureka Server地址
+logging:
+  level:
+    # Feign日志以什么级别监控哪个接口
+    com.zhy.questionnairesystem.service.UserConsumerFeignService: debug
+#feign:
+feign:
+  hystrix:
+    enabled: true # 开启Hystrix

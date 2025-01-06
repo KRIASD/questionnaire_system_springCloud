@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: common-service
+eureka:
+  client:
+    register-with-eureka: true # 是否将自己注册到Eureka Server，默认为true
+    fetch-registry: true # 是否从Eureka Server获取注册信息，默认为true
+    service-url:
+      defaultZone: http://eureka7000.com:7000/eureka/,http://eureka7001.com:7001/eureka/ # Eureka Server地址

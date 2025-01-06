@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-service" />
+        <module name="user-provide" />
+        <module name="admin-provide" />
+        <module name="eureka-common" />
+        <module name="survey-provide" />
+        <module name="eureka-server-standby" />
+        <module name="survey-consumer-feign" />
+        <module name="user-consumer-feign" />
+        <module name="eureka-server" />
+        <module name="admin-consumer-feign" />
+        <module name="cloud-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

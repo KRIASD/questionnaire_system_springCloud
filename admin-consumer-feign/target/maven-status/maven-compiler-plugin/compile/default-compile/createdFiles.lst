@@ -1,0 +1,5 @@
+com\zhy\questionnairesystem\controller\AdminConsumerFeignController.class
+com\zhy\questionnairesystem\service\AdminConsumerFeignService.class
+com\zhy\questionnairesystem\AdminConsumerFeignMain.class
+com\zhy\questionnairesystem\config\FeignConfig.class
+com\zhy\questionnairesystem\hystrix\AdminConsumerFeignServiceHystrix.class
